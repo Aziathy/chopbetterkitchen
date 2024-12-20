@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+     <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <main>
+    <nav class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="background-image">
+    </div>
+<br>
+
+<div class="container">
+    <div class="welcome">
+        <h1>Welcome</h1>
+        <p>We are Locally Crafted Food & Wine Serving Since 1991
+            Welcome to our website! We are truly delighted to have you here, and we extend a warm greeting to all our visitors. This platform was created with you in mind—a place where innovation, information, and inspiration come together to offer you a meaningful experience.
+
+Our mission is to provide a space where you can discover new opportunities, connect with like-minded individuals, and access resources that empower you to achieve your goals. Whether you’re visiting to explore our services, learn something new, or simply enjoy the content we’ve curated, we are here to support and guide you every step of the way.
+
+
+        .</p>
+    </div>
+    <div class="image-container">
+        <img src="images/vv.png" alt="Delicious food" />
+    </div>
+</div>
+
+     <script src="cn.js"></script>
+      
+     
+    </div>
+     <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="contact_process.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+     <main>
+        <br>
+<footer class="footer">
+      <p>&copy; 2024 Mum's Kitchen. All rights reserved.</p>
+    </footer>
+  </div>
+     
+</body>
+
+</html>
+

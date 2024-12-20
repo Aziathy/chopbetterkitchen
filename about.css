@@ -1,0 +1,258 @@
+/* Reset default margin and padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body font styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Navbar links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Navbar menu items */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Mobile responsive navbar */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Background image styling */
+.background-image {
+    background-image: url('images/sa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main content styling */
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 2000px;
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Flexbox layout for columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive box for content layout */
+.responsive-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Styling for individual text boxes inside responsive box */
+.text-box {
+    flex: 1 1 50%; /* Flex-grow and shrink with a base width of 50% */
+    padding: 20px; /* Add padding inside text-box */
+}
+
+/* Text-box heading and paragraphs styling */
+.text-box h2 {
+    text-align: center;
+}
+
+.text-box p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Container section layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.welcome {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.welcome h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.welcome p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Image container inside the layout */
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile responsive layout for .container */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* About section styling */
+.about-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.about-subsection {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subsection-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subsection-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subsection-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Mobile adjustments for about section */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 28px;
+    }
+
+    .subsection-title {
+        font-size: 20px;
+    }
+
+    .subsection-description {
+        font-size: 14px;
+    }
+}
